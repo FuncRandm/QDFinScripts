@@ -21,12 +21,13 @@ __license__ = "Apache License 2.0"
 __maintainer__ = "Nic Ho Chee"
 __twitter__ = "@funcrandm"
 __email__ = "dev@bedtimecomics.com"
-__status__ = "Development" 
+__status__ = "Development"
 __version__ = "0.1.0"
 
 import unittest
 import sys
 
+# flake8: E703
 sys.path.append('Tests')
 
 from test_QDFinInterest import InterestTests
@@ -35,12 +36,12 @@ from test_QDFinMoneyMarket import MoneyMarketTests
 from test_QDFinStatistics import StatisticsTests
 from test_QDFinTimeValueMoney import TimeValueOfMoneyTests
 
-testSuite = unittest.TestLoader().loadTestsFromTestCase(InterestTests);
-testSuite.addTest(unittest.TestLoader().loadTestsFromTestCase(InterestRateInstrumentsTests));
-testSuite.addTest(unittest.TestLoader().loadTestsFromTestCase(MoneyMarketTests));
-testSuite.addTest(unittest.TestLoader().loadTestsFromTestCase(StatisticsTests));
-testSuite.addTest(unittest.TestLoader().loadTestsFromTestCase(TimeValueOfMoneyTests));
+testSuite = unittest.TestLoader().loadTestsFromTestCase(InterestTests)
+testSuite.addTest(unittest.TestLoader().loadTestsFromTestCase(InterestRateInstrumentsTests))
+testSuite.addTest(unittest.TestLoader().loadTestsFromTestCase(MoneyMarketTests))
+testSuite.addTest(unittest.TestLoader().loadTestsFromTestCase(StatisticsTests))
+testSuite.addTest(unittest.TestLoader().loadTestsFromTestCase(TimeValueOfMoneyTests))
 
-print(testSuite);
+print(testSuite)
 
-unittest.TextTestRunner(verbosity=3).run(testSuite);
+unittest.TextTestRunner(verbosity=3).run(testSuite)
