@@ -36,7 +36,6 @@ from test_QDFinStatistics import StatisticsTests
 from test_QDFinTimeValueMoney import TimeValueOfMoneyTests
 
 testSuite = unittest.TestLoader().loadTestsFromTestCase(InterestTests);
-testSuite.addTest(unittest.TestLoader().loadTestsFromTestCase(InterestTests));
 testSuite.addTest(unittest.TestLoader().loadTestsFromTestCase(InterestRateInstrumentsTests));
 testSuite.addTest(unittest.TestLoader().loadTestsFromTestCase(MoneyMarketTests));
 testSuite.addTest(unittest.TestLoader().loadTestsFromTestCase(StatisticsTests));
