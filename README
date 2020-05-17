@@ -1,0 +1,17 @@
+
+	QDFinScripts: Financial Programming Scripts in Python
+
+	OVERVIEW:
+
+	This is a set of financial programming scripts written in Python and OpenSourced.  They were originally written as the start of a financial calculator and 
+	data visualisations, and to give @funcrandm a chance to move to a modern scripting language, and away from scripting and highlevel languages like PHP/Perl/C# for general tools work. The scripts will eventually cover:
+
+		Basic statistics, financial constants and discounting
+		Swaps and Options
+		Interest Rate Instruments, including Bond Calculations, Futures, and Forward Rate Agreements
+		Forex
+		Curve visualisations
+
+	LICENSING:
+
+	QDFinScripts are licensed under the Apache License, Version 2.0. See LICENSE for the full license text.
