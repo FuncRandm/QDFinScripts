@@ -27,8 +27,7 @@ __version__ = "0.1.0"
 import unittest
 import sys
 
-# flake8: E703
-sys.path.append('Tests')
+sys.path.append('Tests') # noqa: E703
 
 from test_QDFinInterest import InterestTests
 from test_QDFinInterestRateInstruments import InterestRateInstrumentsTests
